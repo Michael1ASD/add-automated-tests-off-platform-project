@@ -22,7 +22,7 @@ def withdraw():
     if(int(amount) > balance):
         return jsonify({'balance': balance})    
     balance = balance - int(amount)
-    return jsonify({'balance': balance})
+    return jsonify({'balance': balance1})
 
 if __name__ == '__main__':
     app.run(debug=True)
